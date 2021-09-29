@@ -12,10 +12,10 @@ const strangerThingsRepository = new StrangerThingsRepository(
 );
 const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
-);obrigado
+);
 
 app.use(cors());
-const { UPSIDEDOWN_MODE } = process.env;
+const { UPSIDEDOWN_MODE } = process.env === true;
 const hereIsTheUpsideDown = UPSIDEDOWN_MODE;
 
 app.get('/', (req, res) => {
