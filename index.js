@@ -29,6 +29,6 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(apiPort, () => {
+app.listen(apiPort || 3000, () => {
   console.log(`Escutando na porta ${apiPort}`);
 });
