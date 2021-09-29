@@ -20,8 +20,6 @@ const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE.toLowerCase() === 'true' || 
 
 const { PORT } = process.env;
 
-// const UPSIDEDOWN_MODE = true;
-
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
@@ -34,3 +32,5 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
 });
+
+// Agradecimentos a Raphael Gumieri Turma 10 Tribo - B pelo auxilio no Requisito 6 
