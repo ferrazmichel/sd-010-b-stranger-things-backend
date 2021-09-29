@@ -18,7 +18,7 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 // https://stackoverflow.com/questions/263965/how-can-i-convert-a-string-to-boolean-in-javascript?rq=1
-const UPSIDEDOWN_MODE = (process.env.UPSIDEDOWN_MODE.toLowerCase() === 'true') || false; 
+const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE.toLowerCase() === 'true';
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
