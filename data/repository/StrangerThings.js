@@ -14,6 +14,7 @@ class StrangerThingsRepository {
   constructor(dataset) {
     this.dataset = dataset;
   }
+
   search(params, pagination) {
     const { page = 1, size = 10 } = pagination;
 
