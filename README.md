@@ -7,3 +7,5 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
   - Adicione os comandos utilizados, de maneira sequencial, ao README do frontend.
 
 **Nota**: Este direcionamento está presente no [repositório](https://github.com/tryber/sd-010-b-stranger-things) em que os requisitos do projeto são destrinchados.
+
+//I comment, therefore I exist
