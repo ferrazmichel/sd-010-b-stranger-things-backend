@@ -1,7 +1,7 @@
 'use strict';
 
 const flipout = require('flipout');
-console.log('teste1')
+console.log('teste12')
 
 class StrangerThingsService {
   constructor(repository) {
