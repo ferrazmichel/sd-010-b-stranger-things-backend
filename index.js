@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-
+require('dotenv').config();
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
@@ -14,7 +14,7 @@ const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
 
-const PORT = process.env.PORT || 3000;
+const { PORT } = process.env;
 
 app.use(cors());
 
