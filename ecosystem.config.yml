@@ -1,5 +1,5 @@
 apps:
-  - name: api-upside-down
+  - name: api-Stranger_things
     script: ./index.js
     watch: false
     exec_mode: cluster
