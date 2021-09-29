@@ -1,4 +1,7 @@
 apps:
-  - name: app
+  - name: api upsidedown
     script: ./index.js
-    watch: ./
+    watch: false
+    exec_mode: cluster
+    instances: 2
+    max_memory_restart: 200M
