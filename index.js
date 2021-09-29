@@ -29,5 +29,8 @@ app.get('/', (req, res) => {
 
 app.listen(3000, () => {
   console.log('Escutando na porta 3000');
-  console.log('Camila aqui');
+  const PORT = process.env.PORT || 300;
+  app.listen(PORT, () => {
+    console.log(`Escutando porta ${PORT}`);
+  });
 });
