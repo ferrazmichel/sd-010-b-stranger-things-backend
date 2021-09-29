@@ -1,5 +1,5 @@
 'use strict';
-
+// Comentário para o meu primeiro commite
 const flipout = require('flipout');
 
 class StrangerThingsService {
