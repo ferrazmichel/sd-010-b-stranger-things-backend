@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     req.query,
     hereIsTheUpsideDown,
   );
-
+// adicionando bd
   res.status(200).json(characters);
 });
 
