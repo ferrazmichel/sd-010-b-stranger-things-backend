@@ -19,7 +19,8 @@ app.use(cors());
 const { UPSIDEDOWN_MODE } = process.env;
 const port = process.env.PORT;
 
-const hereIsTheUpsideDown = Boolean(UPSIDEDOWN_MODE);
+// https://codippa.com/how-to-convert-string-to-boolean-javascript/
+const hereIsTheUpsideDown = JSON.parse(UPSIDEDOWN_MODE);
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
