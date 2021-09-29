@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 
+const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE === 'true' || false;
 const PORT = process.env.PORT || 3000;
-const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE == 'true' || true
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
