@@ -28,8 +28,8 @@ app.get('/', (req, res) => {
 });
 
 const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE === 'true' || false;
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT
 
-app.listen(port, () => {
-  console.log(`Escutando na porta ${port}`);
+app.listen(PORT, () => {
+  console.log(`Escutando na porta ${PORT}`);
 });
