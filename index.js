@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 
   res.status(200).json(characters);
 });
-
+// mudando
 const { PORT } = process.env;
 
 app.listen(PORT, () => {
