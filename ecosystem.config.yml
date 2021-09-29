@@ -1,5 +1,5 @@
 apps:
-  - name: api upsidedown
+  - name: pm2-process
     script: ./index.js
     watch: false
     exec_mode: cluster
