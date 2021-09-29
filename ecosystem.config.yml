@@ -1,6 +1,6 @@
 apps:
   - name: app-bk
-    script: ./index.js
+    script: index.js
     exec_mode: cluster
     instances: 2
     watch: index.js
