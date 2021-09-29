@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const app = express();
 
-const { PORT } = process.env;
+const PORT = process.env.PORT || 3000;
 
 const { UPSIDEDOWN_MODE } = process.env;
 
