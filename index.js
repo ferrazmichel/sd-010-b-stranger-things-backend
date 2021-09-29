@@ -1,3 +1,4 @@
+// Iniciando o projeto Stranger Things
 const express = require('express');
 const cors = require('cors');
 
