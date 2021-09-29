@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const dale = require('dotenv').config();
+require('dotenv').config();
 
 const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE === 'true' || false;
-const PORT = dale.process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
