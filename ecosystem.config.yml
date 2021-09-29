@@ -1,6 +1,7 @@
-apps:
-  - name: app-bk
-    script: index.js
-    exec_mode: cluster
+apps: 
+  - name: 'stranger things'
+    script: './index.js'
+    exec_mode: 'cluster'
     instances: 2
-    watch: index.js
+    watch: false
+    max_memory_restart: '200M'
