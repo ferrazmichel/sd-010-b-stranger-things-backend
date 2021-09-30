@@ -1,6 +1,7 @@
 const frisby = require('frisby');
 const flipout = require('flipout');
 const data = require('../data/dataset/stranger-things-characters.json');
+
 require('dotenv').config();
 
 const HAWKINS_URL = `https://${process.env.GITHUB_USER}-bk.herokuapp.com/`
@@ -36,5 +37,5 @@ describe('1 - Verifica o Deploy no Heroku', () => {
             expect(flipData).toContainEqual(character);
           });
         });
-  });
+    });
 });
