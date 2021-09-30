@@ -9,7 +9,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-// const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE || true;
+const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE || true;
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
@@ -20,7 +20,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = true;
+const hereIsTheUpsideDown = (UPSIDEDOWN_MODE === 'true'); 
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
