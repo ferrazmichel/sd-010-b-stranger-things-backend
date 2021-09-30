@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
@@ -27,8 +28,9 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-const PORTA = process.env.PORT;
+const { PORT } = process.env;
+console.log(PORT);
 
-app.listen(PORTA, () => {
-  console.log(`Escutando na porta ${PORTA}`);
+app.listen(PORT, () => {
+  console.log(`Escutando na porta ${PORT}`);
 });
