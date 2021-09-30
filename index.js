@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 
 /* const { PORT } = process.env || 3000; */
-
-app.listen(process.env.PORT, () => {
+const DOOR = process.env.PORT;
+app.listen(DOOR, () => {
   console.log('Escutando na porta 3000');
 });
