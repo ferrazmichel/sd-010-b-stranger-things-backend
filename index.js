@@ -6,7 +6,7 @@ const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
 
 const PORT = process.env.PORT || 3000;
-const UPSIDEDOWN_MODE = JSON.parse(process.env.UPSIDEDOWN_MODE);
+const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN_MODE === 'true';
 const app = express();
 
 const strangerThingsRepository = new StrangerThingsRepository(
