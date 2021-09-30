@@ -28,7 +28,6 @@ app.get('/', (req, res) => {
 
   res.status(200).json(characters);
 });
-
 app.listen(apiPort, () => {
   console.log(`Escutando na porta ${apiPort}`);
 });
