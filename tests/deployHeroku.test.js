@@ -13,6 +13,7 @@ const flipData = data.map(({ name, origin, status }) => ({
 }));
 
 describe('1 - Verifica o Deploy no Heroku', () => {
+  console.log(HAWKINS_URL);
   it('Será validado que ao fazer uma requisição do tipo GET para o endpoint da API Hawkins serão retornadas as informações corretas.', async () => {
     await frisby
       .get(HAWKINS_URL)
