@@ -8,7 +8,6 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 const { PORT, UPSIDEDOWN_MODE } = process.env;
-const port = process.env.PORT || PORT;
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
@@ -28,6 +27,6 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(port, () => {
-  console.log(`Escutando na porta ${port}`);
+app.listen(PORT, () => {
+  console.log(`Escutando na porta ${PORT}`);
 });
