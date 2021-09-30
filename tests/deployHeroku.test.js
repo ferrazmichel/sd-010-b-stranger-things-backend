@@ -3,8 +3,8 @@ const flipout = require('flipout');
 const data = require('../data/dataset/stranger-things-characters.json');
 require('dotenv').config();
 
-const HAWKINS_URL = `https://${process.env.GITHUB_USER}-bk.herokuapp.com/`
-const UPSIDEDOWN_URL = `https://${process.env.GITHUB_USER}-bd.herokuapp.com/`
+const HAWKINS_URL = `https://dennis-marcelo-bk.herokuapp.com/`
+const UPSIDEDOWN_URL = `https://dennis-marcelo-bd.herokuapp.com/`
 
 const flipData = data.map(({ name, origin, status }) => ({
   name: flipout(name),
@@ -13,7 +13,6 @@ const flipData = data.map(({ name, origin, status }) => ({
 }));
 
 describe('1 - Verifica o Deploy no Heroku', () => {
-  console.log(HAWKINS_URL);
   it('Será validado que ao fazer uma requisição do tipo GET para o endpoint da API Hawkins serão retornadas as informações corretas.', async () => {
     await frisby
       .get(HAWKINS_URL)
