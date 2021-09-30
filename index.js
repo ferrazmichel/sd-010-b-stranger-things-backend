@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     UPSIDEDOWN_MODE,
   );
 
-  res.status(200).json(characters[0]);
+  res.status(200).json(characters);
 });
 
 app.listen(PORT, () => {
