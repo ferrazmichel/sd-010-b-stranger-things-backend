@@ -1,6 +1,6 @@
 apps:
 
-- name: 'strangerthings'
+- name: 'App 1'
   script: './index.js'
   exec_mode: 'cluster'
   instances: 2
