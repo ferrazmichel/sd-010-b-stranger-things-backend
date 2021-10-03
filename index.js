@@ -7,7 +7,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
-const { PORT, UPSIDEDOWN_MODE } = process.env;
+const { PORT, UPSIDEDOWN_MODE } = process.env sgfs;
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
