@@ -1,6 +1,6 @@
 apps:
 
-- name: app
+- name: dudawiltiner-bd
   script: ./index.js
   exec_mode: cluster
   instances: 2
