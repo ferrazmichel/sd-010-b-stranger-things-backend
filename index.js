@@ -18,7 +18,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'true';
+const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'true' hghg: hghfg;
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
