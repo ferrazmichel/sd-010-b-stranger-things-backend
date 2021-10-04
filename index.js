@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 
   res.status(200).json(characters);
 });
-
+console.log('abc');
 /* const { PORT } = process.env || 3000; */
 const DOOR = process.env.PORT;
 app.listen(DOOR, () => {
