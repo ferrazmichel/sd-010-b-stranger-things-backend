@@ -5,7 +5,4 @@ apps:
   exec_mode: cluster
   instances: 2
   max_memory_restart: 200M
-  env_prod:
-    ENVIRONMENT: PRODUCTION
-  env_homolog:
-    ENVIRONMENT: HOMOLOG
+  watch: false
