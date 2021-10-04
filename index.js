@@ -3,13 +3,12 @@ const cors = require('cors');
 
 require('dotenv').config();
 
-const { UPSIDEDOWN_MODE } = process.env;
-const PORT = process.env.PORT || 3000;
-
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
+
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
 
+const { PORT, UPSIDEDOWN_MODE } = process.env;
 const app = express();
 
 const strangerThingsRepository = new StrangerThingsRepository(
