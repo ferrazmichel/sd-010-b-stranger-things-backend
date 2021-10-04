@@ -1,11 +1,11 @@
 apps:
 
-- name: fernanda-bk
+- name: FernandaPorto-bk
   script: ./index.js
   exec_mode: cluster
   instances: 2
   max_memory_restart: 200M
-- name: fernanda-bk
+- name: FernandaPorto-bd
   script: ./index.js
   exec_mode: cluster
   instances: 2
