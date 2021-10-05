@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+// Começando
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
