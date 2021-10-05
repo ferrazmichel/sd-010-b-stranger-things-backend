@@ -1,6 +1,6 @@
 apps:
 
-- name: app
+- name: Stranger_Things_API
   script: ./index.js
   exec_mode: cluster
   instances: 2
