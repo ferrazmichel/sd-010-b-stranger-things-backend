@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
@@ -30,7 +29,6 @@ app.get('/', (req, res) => {
 
   res.status(200).json(characters);
 });
-
 
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
